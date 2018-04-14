@@ -30,9 +30,8 @@ The keymap must be a [UTF-8 ( or UTF-16 or UTF-32 )](https://docs.python.org/3/l
 
 The root structure must be an *object*. Its *members* represent the list entries. The *name* of each list entry specifies the key the user has to press to select this entry. This *name* must be unique and have the length 1. All UTF-8 characters are allowed, except the ASCII escape character ( hexadecimal: 1B ). It is up to the user to set characters which can be sent through the terminal. The *value* of each entry must be an *object* again, which must/may contain the following *members*:
 
-return: This *member* specifies the *string* which is written to stdout when its entry is chosen by the user. This member is mandatory.
-
-display: This *member* determines the *string* which is printed on the terminal when all entries are listed. This member is optional. If it is not defined, the *value* of the *member* "return" is used instead.
+* return: This *member* specifies the *string* which is written to stdout when its entry is chosen by the user. This member is mandatory.
+* display: This *member* determines the *string* which is printed on the terminal when all entries are listed. This member is optional. If it is not defined, the *value* of the *member* "return" is used instead.
 
 If an entry contains *members* which are not listed above, they are ignored.
 
@@ -60,7 +59,9 @@ If you press the key "g" now, "today was a good day" is printed on standard outp
 ## About the maintainer
 
 Edgard Schmidt ( https://edik.ch/ )
+
 Email: schmidt (ATT) edik.ch (replace " (ATT) " with "@" )
+
 Official Repository URL: https://github.com/3dik/keymenu
 
 ## License
