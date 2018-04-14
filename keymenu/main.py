@@ -13,7 +13,7 @@ def main():
                  'The value of the chosen item is written to stdout.'
     parser = argparse.ArgumentParser( description=descr, epilog=long_descr )
     parser.add_argument( '--version', action='version',
-                         version='keymenu 0.0' )
+                         version='keymenu 0.1' )
     parser.parse_args()
 
     keymap = decode.with_uniqueness_check( sys.stdin.read() )
