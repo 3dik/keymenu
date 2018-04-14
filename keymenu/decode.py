@@ -4,6 +4,9 @@ class DuplicateKey( Exception ): pass
 
 def _paircheck_hook( pairs ):
     """By default, pythons json module does not forbid redundant keys"""
+    if not len( pairs ):
+        return {}
+
     keys = list( map( lambda item: item[0], pairs ) )
     if 1 != max( map( keys.count, keys ) ):
             raise DuplicateKey()

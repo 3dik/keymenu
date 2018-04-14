@@ -7,12 +7,13 @@ class TestDecode( unittest.TestCase ):
         text_begin = """{
 "a":"first",
 "b":[1,2]"""
+        d = decode.with_uniqueness_check
 
         #quickly check if basic parsing still works
-        data = decode.with_uniqueness_check( text_begin + '}' )
+        self.assertEqual( d( '{}' ), {} )
+        data = d( text_begin + '}' )
         cmp_dict = { 'a':'first', 'b':[1,2] }
         self.assertEqual( cmp_dict, data )
 
         broken = text_begin + ',"a":777}'
-        self.assertRaises( decode.DuplicateKey,
-                           decode.with_uniqueness_check, broken )
+        self.assertRaises( decode.DuplicateKey, d, broken )
