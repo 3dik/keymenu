@@ -2,7 +2,7 @@
 
 Keymenu is a keymap based menu for the terminal. It reads a JSON encoded keymap from standard input and displays a list of all entries and their key bindings. When the user presses one of the defined keys, the string mapped by this key is written to standard output.
 
-Keymenu is highly inspired by tools like [dmenu](https://tools.suckless.org/dmenu/) and [slmenu](https://bitbucket.org/rafaelgg/slmenu). There are [plenty of other similar tools](https://github.com/D630/doc/wiki/Apps%3A-Menus%2C-Picker-etc). However, in contrast to them, this program is intended to be used only with small lists. This enables keymenu to use key bindings instead of prefix matching for the selection of the list entries. As a consequence, the user has less to type. Furthermore, the key bindings do not have to be memorized since they are listed at program startup.
+Keymenu is highly inspired by tools like [dmenu](https://tools.suckless.org/dmenu/) and [slmenu](https://bitbucket.org/rafaelgg/slmenu). There are [plenty of other similar tools](https://github.com/D630/doc/wiki/Apps%3A-Menus%2C-Picker-etc). However, in contrast to them, this program is intended to be used only for small lists. This enables keymenu to use key bindings instead of prefix matching for the selection of the list entries. As a consequence, the user has less to type. Furthermore, the key bindings do not have to be memorized since they are listed at program startup.
 
 ## Usage
 
@@ -60,7 +60,7 @@ If you press the key "g" now, "today was a good day" is printed on standard outp
 
 Edgard Schmidt ( https://edik.ch/ )
 
-Email: schmidt (ATT) edik.ch (replace " (ATT) " with "@" )
+Email: schmidt (ATT) edik.ch ( replace " (ATT) " with "@" )
 
 Official Repository URL: https://github.com/3dik/keymenu
 
