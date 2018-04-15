@@ -26,7 +26,7 @@ Keymenu uses /dev/tty for user interaction so that you do not have to worry abou
 
 ## Keymap Format
 
-The keymap must be a [UTF-8 ( or UTF-16 or UTF-32 )](https://docs.python.org/3/library/json.html#character-encodings) encoded [JSON](https://tools.ietf.org/html/rfc8259) object with the structure noted below. Note, that words which have a special meaning in JSON context are emphasized ( e.g. *object* ).
+The keymap must be a [UTF-8 ( or UTF-16 or UTF-32 )](https://docs.python.org/3/library/json.html#character-encodings) encoded [JSON](https://tools.ietf.org/html/rfc8259) object with the structure described below. Note, that words which have a special meaning in JSON context are emphasized ( e.g. *object* ).
 
 The root structure must be an *object*. Its *members* represent the list entries. The *name* of each list entry specifies the key the user has to press to select this entry. This *name* must be unique and have the length 1. All UTF-8 characters are allowed, except the ASCII escape character ( hexadecimal: 1B ). It is up to the user to set characters which can be sent through the terminal. The *value* of each entry must be an *object* again, which must/may contain the following *members*:
 
