@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1
+## 0.1 - Initial Release
 
 This is the initial release. The following stuff is introduced:
 * user interface
