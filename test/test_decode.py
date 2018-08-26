@@ -1,6 +1,6 @@
 import unittest
 
-from keymenu import decode
+import decode
 
 class TestDecode( unittest.TestCase ):
     def test_with_uniqueness_check( self ):

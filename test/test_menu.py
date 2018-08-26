@@ -3,7 +3,7 @@ from unittest import mock
 import sys
 import io
 
-from keymenu import menu
+import menu
 
 ESC = '\x1b'
 EMPTY = """The list is empty.

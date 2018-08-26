@@ -132,6 +132,14 @@ The "UI" is extremly simple:
   press a few non-matching keys and quit keymenu then, you see nothing but
   menus.
 
+### Automated Tests
+
+Run the following command from the "keymenu" subdirectory (which contains the python files):
+
+```shell
+python3 -m unittest discover -s ../test/
+```
+
 ### About the maintainer
 
 Edgard Schmidt ( https://edik.ch/ )
