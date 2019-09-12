@@ -15,6 +15,18 @@ reimplementation in C should be released soon.
 
 * A trailing newline is not added to the output anymore.
 
+Documentation corrections:
+
+* The first release's readme file stated that the JSON input should be encoded
+  in UTF-8, UTF-16 or UTF-32. Actually, the required encoding depends on the
+  platform and/or the current locale, see
+  [sys.stdin](https://docs.python.org/3/library/sys.html#sys.stdin)
+  and
+  [locale.getpreferredencoding](https://docs.python.org/3/library/locale.html#locale.getpreferredencoding).
+  For the same reason, the readme's "Requirements" section was wrong about the
+  required locale since locales with codesets other than UTF-8 are supported as
+  well.
+
 Development stuff:
 
 * documentation of the test system
