@@ -1,5 +1,10 @@
 # Changelog
 
+## Development Version
+
+This version is probably the last written in Python. An ncurses-based
+reimplementation in C should be released soon.
+
 ## 0.1 - Initial Release
 
 This is the initial release. The following stuff is introduced:

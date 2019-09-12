@@ -15,6 +15,8 @@ matching for the selection of the list entries. As a consequence, the user has
 less to type. Furthermore, the key bindings do not have to be memorized since
 they are listed at program startup.
 
+See also the section "Project Informations".
+
 ## Usage
 
 To start keymenu, invoke "keymenu/main.py" directly or create a symbolic link
@@ -95,7 +97,26 @@ If you start keymenu with this keymap, its entries are listed as follows:
 If you press the key "g" now, "today was a good day" is printed on standard
 output. If you press "o" instead, "I'm fine" is printed.
 
-## About the maintainer
+## Project Informations
+
+This program is still at an early stage. Odds are that its interface will
+change.
+
+This version is probably the last written in Python. An ncurses-based
+reimplementation in C should be released soon.
+
+### Current Limitations
+
+The "UI" is extremly simple:
+
+* It is easy to break the UI's layout using characters such as newline.
+* Instead of "refreshing" the UI after a non-matching key has been typed, this
+  program just reprints the keymap below the old output. Before keymenu quits,
+  it does not restore the previous "content" of the terminal. Thus, if you
+  press a few non-matching keys and quit keymenu then, you see nothing but
+  menus.
+
+### About the maintainer
 
 Edgard Schmidt ( https://edik.ch/ )
 
