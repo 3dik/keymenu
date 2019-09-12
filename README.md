@@ -105,6 +105,22 @@ change.
 This version is probably the last written in Python. An ncurses-based
 reimplementation in C should be released soon.
 
+### Security Issues
+
+Beware of piping untrusted JSON input into this program. But note that robust
+protections against
+[script spoofing](https://en.wikipedia.org/wiki/IDN_homograph_attack)
+might not exist for a tool like keymenu. Thus, depending on your security
+requirements and the way you use this program, even allowing input which is
+only partially untrusted might not be an option anyway.
+
+Other flaws:
+
+* [ANSI escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code)
+  which come from the JSON input might be printed on tty without being
+  filtered. In the best case, malicious input could only break your terminal.
+  However, if your terminal sucks, more serious exploitations may be possible.
+
 ### Current Limitations
 
 The "UI" is extremly simple:
