@@ -11,7 +11,7 @@ reimplementation in C should be released soon.
   attacks.
 * Both releases are also vulnerable to script spoofing.
 
-## 0.1 - Initial Release
+## 0.1 - 2018/04/14 - Initial Release
 
 This is the initial release. The following stuff is introduced:
 
