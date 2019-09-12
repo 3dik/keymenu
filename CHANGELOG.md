@@ -11,6 +11,10 @@ reimplementation in C should be released soon.
   attacks.
 * Both releases are also vulnerable to script spoofing.
 
+**Backwards incompatibilities:**
+
+* A trailing newline is not added to the output anymore.
+
 Development stuff:
 
 * documentation of the test system

@@ -25,7 +25,7 @@ def main():
         value = my_menu.ask()
 
     if value:
-        print( value )
+        print( value, end='' )
 
 if '__main__' == __name__:
     main()
