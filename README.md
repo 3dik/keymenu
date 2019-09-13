@@ -54,23 +54,23 @@ usual, printed on standard error.
 The keymap must be a
 [JSON](https://tools.ietf.org/html/rfc8259) object with the structure described
 below. Note, that words which have a special meaning in a JSON context are
-emphasized ( e.g. *object* ).
+emphasized ( e.g. **object** ).
 
-The root structure must be an *object*. Its *members* represent the list
-entries. The *name* of each list entry specifies the key the user has to press
-to select this entry. This *name* must be unique and have the length 1. All
-characters are allowed, except the ASCII escape character ( hexadecimal: 1B ).
-It is up to the user to set characters which can be sent through the terminal.
-The *value* of each entry must be an *object* again, which must/may contain the
-following *members*:
+The root structure must be an **object**. Its **members** represent the list
+entries. The **name** of each list entry specifies the key the user has to
+press to select this entry. This **name** must be unique and have the length 1.
+All characters are allowed, except the ASCII escape character ( hexadecimal: 1B
+). It is up to the user to set characters which can be sent through the
+terminal. The **value** of each entry must be an **object** again, which
+must/may contain the following **members**:
 
-* return: This *member* specifies the *string* which is written to stdout when
-  its entry is chosen by the user. This member is mandatory.
-* display: This *member* specifies the *string* which is printed on the
+* return: This **member** specifies the **string** which is written to stdout
+  when its entry is chosen by the user. This member is mandatory.
+* display: This **member** specifies the **string** which is printed on the
   terminal when all entries are listed. This member is optional. If it is not
-  defined, the *value* of the *member* "return" is used instead.
+  defined, the **value** of the **member** "return" is used instead.
 
-If an entry contains *members* which are not listed above, they are ignored.
+If an entry contains **members** which are not listed above, they are ignored.
 
 ## Example
 
