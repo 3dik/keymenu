@@ -5,7 +5,7 @@ from standard input and displays a list of all entries and their key bindings.
 When the user presses one of the defined keys, the string mapped by this key is
 written to standard output.
 
-Keymenu is highly inspired by tools like
+Keymenu is highly inspired by tools such as
 [dmenu](https://tools.suckless.org/dmenu/) and
 [slmenu](https://bitbucket.org/rafaelgg/slmenu). There are [plenty of other
 similar tools](https://github.com/D630/doc/wiki/Apps%3A-Menus%2C-Picker-etc).
@@ -36,7 +36,8 @@ terminal. After that, it reads a character from the terminal. If this character
 matches with one of the key bindings, keymenu prints the return value of the
 corresponding list entry on standard output and exits. If the escape character
 is read, keymenu exits without printing anything on standard output. In all
-other cases, keymenu reads the next character and begins again.
+other cases, the input is discarded and keymenu continues waiting for new
+input.
 
 Keymenu uses /dev/tty for user interaction so that you do not have to worry
 about garbage in the streams. If an error occurs, the error messages are, as
@@ -52,7 +53,7 @@ usual, printed on standard error.
 
 The keymap must be a
 [JSON](https://tools.ietf.org/html/rfc8259) object with the structure described
-below. Note, that words which have a special meaning in JSON context are
+below. Note, that words which have a special meaning in a JSON context are
 emphasized ( e.g. *object* ).
 
 The root structure must be an *object*. Its *members* represent the list
@@ -65,7 +66,7 @@ following *members*:
 
 * return: This *member* specifies the *string* which is written to stdout when
   its entry is chosen by the user. This member is mandatory.
-* display: This *member* determines the *string* which is printed on the
+* display: This *member* specifies the *string* which is printed on the
   terminal when all entries are listed. This member is optional. If it is not
   defined, the *value* of the *member* "return" is used instead.
 
@@ -73,7 +74,7 @@ If an entry contains *members* which are not listed above, they are ignored.
 
 ## Example
 
-Let's say you have the following JSON structure:
+Let's say you have the following JSON text:
 
 ```json
 {
@@ -141,7 +142,7 @@ python3 -m unittest discover -s ../test/
 
 Edgard Schmidt ( https://edik.ch/ )
 
-Email: schmidt (ATT) edik.ch ( replace " (ATT) " with "@" )
+Email: schmidt(ATT)edik.ch ( replace "(ATT)" with "@" )
 
 Official Repository URL: https://github.com/3dik/keymenu
 

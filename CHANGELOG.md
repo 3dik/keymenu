@@ -5,17 +5,17 @@
 This version is probably the last written in Python. An ncurses-based
 reimplementation in C should be released soon.
 
-**Security notice:**
+**Security Notice:**
 
 * Both, this and the first release, are vulnerable to ANSI escape sequence
   attacks.
 * Both releases are also vulnerable to script spoofing.
 
-**Backwards incompatibilities:**
+**Backwards Incompatibilities:**
 
 * A trailing newline is not added to the output anymore.
 
-Documentation corrections:
+Documentation Corrections:
 
 * The first release's readme file stated that the JSON input should be encoded
   in UTF-8, UTF-16 or UTF-32. Actually, the required encoding depends on the
@@ -27,7 +27,7 @@ Documentation corrections:
   required locale since locales with codesets other than UTF-8 are supported as
   well.
 
-Development stuff:
+Development Stuff:
 
 * documentation of the test system
 
@@ -40,7 +40,7 @@ This is the initial release. The following stuff is introduced:
 * usage of /dev/tty for the communication with the user
 * JSON keymap parsing
 
-Developement stuff:
+Developement Stuff:
 
 * a few (unit?) tests which test most of the code
 * initial readme file
