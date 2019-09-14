@@ -130,6 +130,19 @@ The "UI" is extremly simple:
   press a few non-matching keys and quit keymenu then, you see nothing but
   menus.
 
+### Development
+
+Official URLs:
+
+* Code Repository: https://git.sr.ht/~edik/keymenu
+* Mailing List: https://lists.sr.ht/~edik/keymenu
+* Bug Tracker: https://todo.sr.ht/~edik/keymenu
+
+Branches:
+
+* master: code of the latest release
+* dev: code base for development, history is stable
+
 ### Automated Tests
 
 Run the following command from the "keymenu" subdirectory (which contains the python files):
@@ -143,8 +156,6 @@ python3 -m unittest discover -s ../test/
 Edgard Schmidt (https://edik.ch/)
 
 Email: schmidt(ATT)edik.ch (replace "(ATT)" with "@")
-
-Official Repository URL: https://github.com/3dik/keymenu
 
 ## License
 

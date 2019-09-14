@@ -1,6 +1,11 @@
 # Changelog
 
-## Development Version
+## 0.2 - 2019/09/14 - Last Python Version
+
+**The project has moved**
+from [GitHub](https://github.com/3dik/keymenu)
+to [Sourcehut](https://git.sr.ht/~edik/keymenu).
+The GitHub repository will not receive updates any longer.
 
 This version is probably the last written in Python. An ncurses-based
 reimplementation in C should be released soon.
