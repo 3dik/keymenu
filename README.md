@@ -54,13 +54,13 @@ usual, printed on standard error.
 The keymap must be a
 [JSON](https://tools.ietf.org/html/rfc8259) object with the structure described
 below. Note, that words which have a special meaning in a JSON context are
-emphasized ( e.g. **object** ).
+emphasized (e.g. **object**).
 
 The root structure must be an **object**. Its **members** represent the list
 entries. The **name** of each list entry specifies the key the user has to
 press to select this entry. This **name** must be unique and have the length 1.
-All characters are allowed, except the ASCII escape character ( hexadecimal: 1B
-). It is up to the user to set characters which can be sent through the
+All characters are allowed, except the ASCII escape character (hexadecimal:
+1B). It is up to the user to set characters which can be sent through the
 terminal. The **value** of each entry must be an **object** again, which
 must/may contain the following **members**:
 
@@ -140,9 +140,9 @@ python3 -m unittest discover -s ../test/
 
 ### About the maintainer
 
-Edgard Schmidt ( https://edik.ch/ )
+Edgard Schmidt (https://edik.ch/)
 
-Email: schmidt(ATT)edik.ch ( replace "(ATT)" with "@" )
+Email: schmidt(ATT)edik.ch (replace "(ATT)" with "@")
 
 Official Repository URL: https://github.com/3dik/keymenu
 
